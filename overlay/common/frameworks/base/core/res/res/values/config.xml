@@ -111,4 +111,18 @@
 
     <!-- Flag indicating which package name can access DeviceConfig table -->
     <string name="config_deviceConfiguratorPackageName" translatable="false">org.protonaosp.deviceconfig</string>
+    
+    <!-- Use Bliss Launcher for Recents -->
+    <string name="config_recentsComponentName">com.android.launcher3/com.android.quickstep.RecentsActivity</string>
+    <string name="config_secondaryHomeComponent">ccom.android.launcher3/com.android.launcher3.SecondaryDisplayLauncher</string>
+    
+    <!-- This is the default launcher package with an activity to use on secondary displays that
+         support system decorations.
+         This launcher package must have an activity that supports multiple instances and has
+         corresponding launch mode set in AndroidManifest.
+         {@see android.view.Display#FLAG_SHOULD_SHOW_SYSTEM_DECORATIONS} -->
+	<!--
+    <string name="config_secondaryHomePackage" translatable="false">com.farmerbb.taskbar</string>
+	-->
+    
 </resources>
