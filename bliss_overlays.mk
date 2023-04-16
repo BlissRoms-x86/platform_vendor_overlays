@@ -78,6 +78,7 @@ include vendor/overlays/navbar/navbar.mk
 # Cutout control overlays
 #include vendor/overlays/NotchCity/NotchCity.mk
 
+ifneq ($(IS_GO_VERSION), true)
 # Overlays
 PRODUCT_PACKAGES += \
     CustomConfigOverlay \
@@ -87,3 +88,12 @@ PRODUCT_PACKAGES += \
 # Custom Overlays
 PRODUCT_PACKAGES += \
     CustomPixelLauncherOverlay
+else
+
+# Overlays
+PRODUCT_PACKAGES += \
+    CustomConfigOverlay \
+    CustomLauncherOverlay \
+    CustomSettingsOverlay
+
+endif
