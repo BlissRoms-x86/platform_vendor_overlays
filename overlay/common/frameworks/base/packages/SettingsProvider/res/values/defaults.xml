@@ -23,4 +23,7 @@
     <bool name="def_one_handed_mode_enabled">true</bool>
 
     <string name="def_backup_transport">com.google.android.gms/.backup.BackupTransportService</string>
+    <!-- Allow users to use both the on-screen keyboard, as well as a real
+         keyboard -->
+    <bool name="def_show_ime_with_hard_keyboard">true</bool>
 </resources>
